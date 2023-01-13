@@ -19,20 +19,20 @@ of the array to the very right. You can only see the k numbers in the window. Ea
 moves right by one position. Return the min sliding window.
 
 Example 1
+
 Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+
 Output: [-1,-3,-3,-3,3,3]
+
 Explanation:
 
-Window Position     Min
-[1 3 -1] -3 5 3 6 7 -1
-1 [3 -1 -3] 5 3 6 7 -3
-1 3 [-1 -3 5] 3 6 7 -3
-1 3 -1 [-3 5 3] 6 7 -3
-1 3 -1 -3 [5 3 6] 7  3
-1 3 -1 -3 5 [3 6 7]  3
+<img width="240" alt="image" src="https://user-images.githubusercontent.com/112485986/212212724-43f54249-e63a-4ddb-a19c-cf77b8009a32.png">
+
 
 Example 2
+
 Input: nums = [1], k = 1
+
 Output: [1]
 
 This is implemented in the usecase file.

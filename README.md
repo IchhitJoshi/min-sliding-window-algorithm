@@ -3,14 +3,14 @@
 First, this C++ program constructs a MinQueue priority queue template class using heaps. It supports the following implementation:
 
 MinQueue() - constructors
-insert(x)
-min()
-extract_min()
-decrease_key(i,k)
 
-heapify(i)
-build_min_heap()
-heapsort(A)
+insert(x),
+min(),
+extract_min(),
+decrease_key(i,k),
+heapify(i),
+build_min_heap(),
+heapsort(A),
 
 Then, it is used to solve minimum sliding window problem:
 
@@ -36,6 +36,12 @@ Input: nums = [1], k = 1
 Output: [1]
 
 This is implemented in the usecase file.
+
+## Why this implementation?
+
+There is a simple way of solving this problem using 2 for loops which is the brute force method. This will take time complexity O(n^2) to run.
+
+Using this min queue implementation, the run time improves from O(n^2) to O(nlogn), making this solution faster.
 
 ## Makefile:
 The command ./test will run all the unit tests in the test_minqueue.cpp file evaluating the MinQueue class. 
